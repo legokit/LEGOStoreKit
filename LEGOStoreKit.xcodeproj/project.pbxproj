@@ -26,6 +26,19 @@
 		71CC47A3228915EB00AD7BDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		71CC47A5228915EB00AD7BDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71CC47A6228915EB00AD7BDA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		71CC47AF2289548F00AD7BDA /* LEGOPurchasStatePostParam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEGOPurchasStatePostParam.m; sourceTree = "<group>"; };
+		71CC47B02289548F00AD7BDA /* LEGOPurchasStatePostParam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOPurchasStatePostParam.h; sourceTree = "<group>"; };
+		71CC47B12289548F00AD7BDA /* NSNotification+LEGOStore.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSNotification+LEGOStore.m"; sourceTree = "<group>"; };
+		71CC47B22289548F00AD7BDA /* LEGOStoreProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOStoreProtocol.h; sourceTree = "<group>"; };
+		71CC47B42289548F00AD7BDA /* LEGOStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOStoreManager.h; sourceTree = "<group>"; };
+		71CC47B52289548F00AD7BDA /* LEGOTransactionManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEGOTransactionManager.m; sourceTree = "<group>"; };
+		71CC47B62289548F00AD7BDA /* LEGOStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEGOStoreManager.m; sourceTree = "<group>"; };
+		71CC47B72289548F00AD7BDA /* LEGOTransactionManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOTransactionManager.h; sourceTree = "<group>"; };
+		71CC47B82289548F00AD7BDA /* LEGOReceiptRefreshService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEGOReceiptRefreshService.m; sourceTree = "<group>"; };
+		71CC47B92289548F00AD7BDA /* LEGOStoreProductService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LEGOStoreProductService.m; sourceTree = "<group>"; };
+		71CC47BA2289548F00AD7BDA /* LEGOReceiptRefreshService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOReceiptRefreshService.h; sourceTree = "<group>"; };
+		71CC47BB2289548F00AD7BDA /* NSNotification+LEGOStore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSNotification+LEGOStore.h"; sourceTree = "<group>"; };
+		71CC47BC2289548F00AD7BDA /* LEGOStoreProductService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LEGOStoreProductService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +55,7 @@
 		71CC478B228915EA00AD7BDA = {
 			isa = PBXGroup;
 			children = (
+				71CC47AD228953EC00AD7BDA /* Core */,
 				71CC4796228915EA00AD7BDA /* LEGOStoreKit */,
 				71CC4795228915EA00AD7BDA /* Products */,
 			);
@@ -69,6 +83,42 @@
 				71CC47A6228915EB00AD7BDA /* main.m */,
 			);
 			path = LEGOStoreKit;
+			sourceTree = "<group>";
+		};
+		71CC47AD228953EC00AD7BDA /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				71CC47B22289548F00AD7BDA /* LEGOStoreProtocol.h */,
+				71CC47BA2289548F00AD7BDA /* LEGOReceiptRefreshService.h */,
+				71CC47B82289548F00AD7BDA /* LEGOReceiptRefreshService.m */,
+				71CC47BC2289548F00AD7BDA /* LEGOStoreProductService.h */,
+				71CC47B92289548F00AD7BDA /* LEGOStoreProductService.m */,
+				71CC47BB2289548F00AD7BDA /* NSNotification+LEGOStore.h */,
+				71CC47B12289548F00AD7BDA /* NSNotification+LEGOStore.m */,
+				71CC47AE2289548F00AD7BDA /* Param */,
+				71CC47B32289548F00AD7BDA /* Manager */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		71CC47AE2289548F00AD7BDA /* Param */ = {
+			isa = PBXGroup;
+			children = (
+				71CC47AF2289548F00AD7BDA /* LEGOPurchasStatePostParam.m */,
+				71CC47B02289548F00AD7BDA /* LEGOPurchasStatePostParam.h */,
+			);
+			path = Param;
+			sourceTree = "<group>";
+		};
+		71CC47B32289548F00AD7BDA /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				71CC47B42289548F00AD7BDA /* LEGOStoreManager.h */,
+				71CC47B62289548F00AD7BDA /* LEGOStoreManager.m */,
+				71CC47B72289548F00AD7BDA /* LEGOTransactionManager.h */,
+				71CC47B52289548F00AD7BDA /* LEGOTransactionManager.m */,
+			);
+			path = Manager;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
