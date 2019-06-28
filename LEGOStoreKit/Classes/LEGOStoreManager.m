@@ -33,16 +33,8 @@ static LEGOStoreManager *instance = nil;
 +(instancetype)defaultStore {
     static dispatch_once_t onceToken ;
     dispatch_once(&onceToken, ^{
-        instance = [[super allocWithZone:NULL] init];
+        instance = [[super allocWithZone:NULL] init] ;
         [[SKPaymentQueue defaultQueue] addTransactionObserver:instance];
-    });
-    return instance;
-}
-
-+ (id)allocWithZone:(struct _NSZone *)zone {
-    return [LEGOStoreManager defaultStore];
-}
-
     });
     return instance;
 }

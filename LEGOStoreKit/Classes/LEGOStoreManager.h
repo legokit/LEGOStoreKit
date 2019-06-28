@@ -28,7 +28,7 @@
 /**
  *  购买成功
  *
- *  @param productID 购买成功的商品ID
+ *  @param transaction 购买成功的商品
  */
 - (void)legoBuyProductSuccessed:(SKPaymentTransaction *)transaction;
 
@@ -48,7 +48,7 @@
 
 /**
  *  恢复了购买失败
- *  @param 失败的原因 error.debugDescription
+ *  @param error error.debugDescription
  */
 - (void)legoRestoreTransactionsFailure:(NSError *)error;
 
