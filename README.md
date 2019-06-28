@@ -73,7 +73,7 @@ pod 'LEGOStoreKit'
 @interface LEGOStoreManager : NSObject
 
 /**
- *  购买完后是否在iOS端向服务器验证一次，默认为NO
+ *  购买完后是否在iOS端向苹果官方服务器验证一次，默认为NO
  */
 @property (nonatomic, assign) BOOL isCheckByiTunesStore;
 
