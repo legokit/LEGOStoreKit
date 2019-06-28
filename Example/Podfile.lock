@@ -1,0 +1,16 @@
+PODS:
+  - LEGOStoreKit (0.1.0)
+
+DEPENDENCIES:
+  - LEGOStoreKit (from `../`)
+
+EXTERNAL SOURCES:
+  LEGOStoreKit:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  LEGOStoreKit: f5504a8ccbe22bb077b7996743866c3de83c2258
+
+PODFILE CHECKSUM: 546bd9e18b020f1a789783f8dc08b4e21dec11e5
+
+COCOAPODS: 1.6.1

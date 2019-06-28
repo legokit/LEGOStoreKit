@@ -1,0 +1,22 @@
+{
+  "name": "LEGOStoreKit",
+  "version": "0.1.0",
+  "summary": "A short description of LEGOStoreKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/564008993@qq.com/LEGOStoreKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "564008993@qq.com": "564008993@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/564008993@qq.com/LEGOStoreKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "LEGOStoreKit/Classes/**/*"
+}

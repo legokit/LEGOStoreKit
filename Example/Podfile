@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'LEGOStoreKit_Example' do
+  pod 'LEGOStoreKit', :path => '../'
+
+  target 'LEGOStoreKit_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
