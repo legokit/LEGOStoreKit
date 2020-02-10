@@ -28,28 +28,28 @@ pod 'LEGOStoreKit'
 @protocol LEGOAppPurchaseStateDelegate <NSObject>
 
 /**
- *  在线请求可购买商品成功
+ *  Online request for available products succeeded 在线请求可购买商品成功
  *
- *  @param products 商品数组
+ *  @param products goods 商品数组
  */
 - (void)legoGotProducts:(NSMutableArray *)products;
 
 /**
- *  在线请求可购买商品失败
+ *  Online request for available product failed 在线请求可购买商品失败
  *
  *  @param error 失败原因
  */
 - (void)legoGotProductsFailure:(NSError *)error;
 
 /**
- *  购买成功
+ *  sucess 购买成功
  *
  *  @param productID 购买成功的商品ID
  */
 - (void)legoBuyProductSuccessed:(SKPaymentTransaction *)transaction;
 
 /**
- *  购买失败
+ *  fail 购买失败
  *
  *  @param productID 商品ID
  */
