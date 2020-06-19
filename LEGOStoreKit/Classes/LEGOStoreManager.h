@@ -16,7 +16,7 @@
  *
  *  @param products 商品数组
  */
-- (void)legoGotProducts:(NSMutableArray *)products;
+- (void)legoGotProducts:(NSArray <SKProduct *> *)products;
 
 /**
  *  在线请求可购买商品失败
@@ -35,9 +35,9 @@
 /**
  *  购买失败
  *
- *  @param productID 商品ID
+ *  @param transaction 购买失败的商品
  */
-- (void)legoBuyProductFailure:(NSString *)productID error:(NSError *)error;
+- (void)legoBuyProductFailure:(SKPaymentTransaction *)transaction;
 
 /**
  *  恢复了已购买的商品
@@ -56,14 +56,9 @@
 
 @interface LEGOStoreManager : NSObject
 
-/**
- *  购买完后是否在iOS端向服务器验证一次，默认为NO
- */
-@property (nonatomic, assign) BOOL isCheckByiTunesStore;
-
 @property (nonatomic, weak) id <LEGOAppPurchaseStateDelegate> delegate;
 
-+ (instancetype)defaultStore;
++ (instancetype)shareManager;
 
 /**
  *  询问苹果的服务器能够销售哪些商品，并存于内存当中
@@ -83,6 +78,11 @@
  *  恢复用户商品
  */
 - (void)restorePurchase;
+
+/**
+* applicationWillTerminate 移除事务监听
+*/
+- (void)removeTransactionObserver;
 
 
 @end
