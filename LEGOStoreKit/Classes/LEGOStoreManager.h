@@ -52,6 +52,13 @@
  */
 - (void)legoRestoreTransactionsFailure:(NSError *)error;
 
+
+/**
+ *  appstore 内的便捷购买
+ *  @param products 购买成功的商品
+ */
+- (void)legoBuyFromAppStorePayment:(SKPayment *)payment;
+
 @end
 
 @interface LEGOStoreManager : NSObject

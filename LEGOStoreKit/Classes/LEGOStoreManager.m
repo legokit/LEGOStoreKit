@@ -191,6 +191,15 @@ static LEGOStoreManager *instance = nil;
     }
 }
 
+#pragma mark -appStore 内便捷购买
+- (BOOL)paymentQueue:(SKPaymentQueue *)queue shouldAddStorePayment:(SKPayment *)payment forProduct:(SKProduct *)product NS_SWIFT_NAME(paymentQueue(_:shouldAddStorePayment:for:)) NS_AVAILABLE_IOS(11_0)
+{
+    if (self.delegate && [self.delegate respondsToSelector:@selector(legoBuyFromAppStorePayment:)]) {
+        [self.delegate legoBuyFromAppStorePayment:payment];
+    }
+    return NO;
+}
+
 - (void)removeTransactionObserver
 {
     [[SKPaymentQueue defaultQueue] removeTransactionObserver:self];
