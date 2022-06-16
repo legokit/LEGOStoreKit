@@ -25,7 +25,6 @@ static LEGOStoreManager *instance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[super allocWithZone:NULL] init] ;
-        [[SKPaymentQueue defaultQueue] addTransactionObserver:instance];
     });
     return instance;
 }
@@ -36,6 +35,10 @@ static LEGOStoreManager *instance = nil;
 
 - (id)copyWithZone:(struct _NSZone *)zone {
     return [LEGOStoreManager shareManager];
+}
+
+- (void)run {
+    [[SKPaymentQueue defaultQueue] addTransactionObserver:self];
 }
 
 - (NSMutableArray <SKPaymentTransaction *> *)restoreTransactions {

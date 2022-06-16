@@ -67,6 +67,8 @@
 
 + (instancetype)shareManager;
 
+- (void)run;
+
 /**
  *  询问苹果的服务器能够销售哪些商品，并存于内存当中
  *
